@@ -47,4 +47,4 @@
 - Video Reference
   -- https://youtu.be/a19DDOlukgc
 - Download script for building the model
-  `https://mer.vin/2024/10/omni-parser/`
+  -- https://mer.vin/2024/10/omni-parser/
