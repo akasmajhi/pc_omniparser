@@ -1,3 +1,4 @@
+# TODO: Try playing blip2 as a next step
 # 1. Import libraries
 
 from ../OmniParser/utils import get_som_labeled_img, check_ocr_box, get_caption_model_processor, get_yolo_model
