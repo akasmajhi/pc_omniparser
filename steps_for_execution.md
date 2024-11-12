@@ -35,8 +35,22 @@
 - Note: This process took about a minute for an amazon listing page.
 
 2. Using Vanila Python
-   - 
-4. Using Jupyter Notebook
+   - Open the app.py present inside the OmniParser folder and run with the following command.
+   - `python app.py`
+   - Ensure that the required Conda environment is set up otherwise you will see failures.
+  
+3. Using Jupyter Notebook
+   - You need to run `demo.ipynb` notebook present inside OmniParser folder.
+   - Caution/Note
+     > Navigate to OmniParser folder, activate the conda environment and run the Jupyter notebook present in the required conda env.
+     > For example, `conda activate pravash` and then list all available jupyter notebooks
+   > `conda env list`
+     - `/home/akasmajhi/.local/bin/jupyter`
+     - `/home/akasmajhi/anaconda3/envs/pravash/bin/jupyter`
+   - As you can see there are 2 Jupyter notebook instances in different locations.
+   - Run the notebook present in the required conda environment.
+    `/home/akasmajhi/anaconda3/envs/pravash/bin/jupyter notebook`
+
 
 ## References
 
