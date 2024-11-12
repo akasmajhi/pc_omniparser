@@ -35,6 +35,8 @@
 - Note: This process took about a minute for an amazon listing page.
 
 2. Using Vanila Python
+   - 
+4. Using Jupyter Notebook
 
 ## References
 
