@@ -1,7 +1,7 @@
 # TODO: Try playing blip2 as a next step
 # 1. Import libraries
 
-from ../OmniParser/utils import get_som_labeled_img, check_ocr_box, get_caption_model_processor, get_yolo_model
+from utils import get_som_labeled_img, check_ocr_box, get_caption_model_processor, get_yolo_model
 import torch
 from ultralytics import YOLO
 from PIL import Image
@@ -15,12 +15,12 @@ from rich import print
 
 # device = 'cuda'
 device = 'cpu'
-som_model = get_yolo_model(model_path='../OmniParser/weights/icon_detect/best.pt')
+som_model = get_yolo_model(model_path='weights/icon_detect/best.pt')
 som_model.to(device)
 print('model to {}'.format(device))
-caption_model_processor = get_caption_model_processor(model_name="florence2", model_name_or_path="../OmniParser/weights/icon_caption_florence", device=device)
+caption_model_processor = get_caption_model_processor(model_name="florence2", model_name_or_path="weights/icon_caption_florence", device=device)
 
-image_path = '../OmniParser/imgs/windows_multitab.png'
+image_path = 'imgs/windows_multitab.png'
 image = Image.open(image_path)
 image_rgb = image.convert('RGB')
 
