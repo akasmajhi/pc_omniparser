@@ -1,4 +1,4 @@
-This code runs the unittest discovery process to find and execute all test cases in the 'tests' directory that match the pattern 'custom_pattern*.py'. This is a common way to run a test suite in a Python project.
+#This code runs the unittest discovery process to find and execute all test cases in the 'tests' directory that match the pattern 'custom_pattern*.py'. This is a common way to run a test suite in a Python project.
 #python -m unittest discover -s tests -p "custom_pattern*.py"
 
 import unittest
@@ -21,8 +21,8 @@ class TestLogin(unittest.TestCase):
         login_button = driver.find_element(By.XPATH, "//button[text()='Login']")
 
         # Input valid data
-        username_field.send_keys("admin_user")
-        password_field.send_keys("admin_pass")
+        username_field.send_keys("pravash")
+        password_field.send_keys("password")
         role_dropdown.send_keys("Admin")  # Select "Admin" from dropdown
         login_button.click()
 
