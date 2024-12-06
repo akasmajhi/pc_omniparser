@@ -2,6 +2,7 @@
 #python -m unittest discover -s tests -p "custom_pattern*.py"
 
 import unittest
+import time  # Import time for sleep
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
@@ -11,6 +12,7 @@ class TestLogin(unittest.TestCase):
     def setUp(self):
         self.driver = webdriver.Chrome(CHROME_DRIVER_PATH)
         self.driver.get(URL)
+        time.sleep(2)  # Pause for 2 seconds after the browser launches
 
     def test_valid_login_admin(self):
         driver = self.driver
@@ -22,9 +24,13 @@ class TestLogin(unittest.TestCase):
 
         # Input valid data
         username_field.send_keys("pravash")
+        time.sleep(1)
         password_field.send_keys("password")
+        time.sleep(1)
         role_dropdown.send_keys("Admin")  # Select "Admin" from dropdown
+        time.sleep(1)
         login_button.click()
+        time.sleep(2)
 
         # Validation: Check for a successful login
         # Adjust the expected behavior depending on the success page or message
@@ -33,6 +39,7 @@ class TestLogin(unittest.TestCase):
 
     def tearDown(self):
         self.driver.quit()
+        time.sleep(3)
 
 if __name__ == "__main__":
     unittest.main()
