@@ -28,7 +28,7 @@ class TestLogin(unittest.TestCase):
 
         # Validation: Check for a successful login
         # Adjust the expected behavior depending on the success page or message
-        success_message = driver.find_element(By.XPATH, "//h1[text()='Welcome Admin']")
+        success_message = driver.find_element(By.XPATH, "//h1[text()='Hello, pravash! This is the landing page for the Admin!']")
         self.assertIsNotNone(success_message)
 
     def tearDown(self):
