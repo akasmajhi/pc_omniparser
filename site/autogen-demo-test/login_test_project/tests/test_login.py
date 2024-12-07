@@ -10,7 +10,9 @@ from config.config import CHROME_DRIVER_PATH, URL
 
 class TestLogin(unittest.TestCase):
     def setUp(self):
-        self.driver = webdriver.Chrome(CHROME_DRIVER_PATH)
+        self.driver = webdriver.Chrome()
+        ##Original below
+        # self.driver = webdriver.Chrome(CHROME_DRIVER_PATH)
         self.driver.get(URL)
         time.sleep(2)  # Pause for 2 seconds after the browser launches
 
