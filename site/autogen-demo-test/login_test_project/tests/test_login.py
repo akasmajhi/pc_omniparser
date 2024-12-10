@@ -39,7 +39,7 @@ class TestLogin(unittest.TestCase):
         time.sleep(2)
 
         # Validation: Check for a successful login
-        
+
                 #  Verify redirection to the role-specific page
         expected_url = "http://127.0.0.1:5500/site/admin.html"  # Replace with actual Admin URL
         if driver.current_url == expected_url:
@@ -49,7 +49,7 @@ class TestLogin(unittest.TestCase):
 
     # Step 6: Verify the personalized message
         lbl_username = driver.find_element(By.ID, "lbl_username").text
-        expected_message = "Hello, akas! This is the landing page for the Admin!"
+        expected_message = "Hello, lbl_username! This is the landing page for the Admin!"
         if lbl_username == expected_message:
             print("Role-based message verified successfully.")
         else:
