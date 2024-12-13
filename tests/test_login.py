@@ -24,8 +24,6 @@ class TestLogin(unittest.TestCase):
         username_field = driver.find_element(By.NAME, "username")
         password_field = driver.find_element(By.NAME, "password")
         role_dropdown = driver.find_element(By.NAME, "role")
-        #login_button = driver.find_element(By.XPATH, "//button[text()='Login']")
-        
         #Adding the "Login" button is an <input> element with the type="submit" attribute. 
         login_button = driver.find_element(By.XPATH, "//input[@type='submit']")
 
@@ -97,6 +95,8 @@ if __name__ == "__main__":
 # 22. Test for Invalid Logout with Different Roles and Invalid Password and Role
 # 23. Test for Invalid Logout with Different Roles and Invalid Username, Password, and Role
 # 24. Test for Invalid Logout with Different Roles and Valid Username, Password, and Role
+# 25. Test for Invalid Logout with Different Roles and Invalid Username, Password, and Role
+
 
 
 
